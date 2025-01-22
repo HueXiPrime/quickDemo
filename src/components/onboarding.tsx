@@ -1,11 +1,6 @@
-"use client"
-
-import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 
 export default function OnboardingScreen() {
-  const router = useRouter()
-
   return (
     <div className="min-h-screen flex items-center justify-center bg-white">
       <div className="text-center space-y-6">
@@ -17,12 +12,8 @@ export default function OnboardingScreen() {
           </div>
           <p className="text-2xl font-serif">Your new best friend!</p>
         </div>
-        <div className="h-24" />
-        <Button
-          size="lg"
-          className="w-full max-w-md h-14 text-xl rounded-full bg-blue-500 hover:bg-blue-600"
-          onClick={() => router.push("/verify")}
-        >
+        <div className="h-24" /> {/* Spacer */}
+        <Button size="lg" className="w-full max-w-md h-14 text-xl rounded-full bg-blue-500 hover:bg-blue-600">
           Say Hello
         </Button>
       </div>
