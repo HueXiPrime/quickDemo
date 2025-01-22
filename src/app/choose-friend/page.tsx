@@ -52,7 +52,9 @@ export default function ChooseFriendPage() {
                 />
               </button>
               <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-white px-6 py-3 rounded-full border shadow-sm">
-                <p className="whitespace-nowrap text-lg">Hi! I'm Robbin!</p>
+                <p className="whitespace-nowrap text-lg">
+                  Hi! I&apos;m Robbin!
+                </p>
               </div>
             </div>
 
@@ -75,7 +77,9 @@ export default function ChooseFriendPage() {
                 />
               </button>
               <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-white px-6 py-3 rounded-full border shadow-sm">
-                <p className="whitespace-nowrap text-lg">Hi! I'm Robbin!</p>
+                <p className="whitespace-nowrap text-lg">
+                  Hi! I&apos;m Robbin!
+                </p>
               </div>
             </div>
           </div>
