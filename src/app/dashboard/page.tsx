@@ -1,11 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function DashboardPage() {
-  const [selectedFriend] = useState<"man" | "woman">("man"); // You'll want to get this from your actual state management
+  const [selectedFriend, setSelectedFriend] = useState<"man" | "woman">("man");
+
+  useEffect(() => {
+    // Retrieve the selection from localStorage when component mounts
+    const storedFriend = localStorage.getItem("selectedFriend") as
+      | "man"
+      | "woman";
+    if (storedFriend) {
+      setSelectedFriend(storedFriend);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-white">

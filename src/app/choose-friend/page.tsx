@@ -14,7 +14,8 @@ export default function ChooseFriendPage() {
 
   const handleContinue = () => {
     if (selectedFriend) {
-      // Store selection and proceed to next page
+      // Store selection in localStorage before navigation
+      localStorage.setItem("selectedFriend", selectedFriend);
       router.push("/dashboard");
     }
   };
